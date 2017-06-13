@@ -1,0 +1,49 @@
+
+h1{
+text-align: center;
+}
+
+table{
+	margin: auto;
+	
+}
+
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.vertical{
+	border-left: 2px solid black;
+	border-right:2px solid black;
+}/* this will make two vertical lines */
+
+.bottom{
+	border-bottom: 2px solid black;
+}
+
+/*
+
+originally I had these classes but it's better to use two classes: vertical and bottom;
+.rightLower{
+	border-right-style:solid;
+	border-bottom-style: solid;
+	border-color: black;
+	border-width: 3px;
+	/*background: pink;
+}
+
+.lower{
+	/*background: cornflowerblue;
+	border-bottom-style: solid;
+	border-color: black;
+	border-width: 3px;
+}
+
+.right{
+	/*background: seagreen;
+	border-right-style:solid;
+	border-color: black;
+	border-width: 3px;
+}
+*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+<form action="http://wikipedia.org" method="post">
+
+<div>
+<label for "firstName">First Name: </label>	
+<input id="firstName" type="text" placeholder="First Name" name="firstName" required>
+<!-- here the name attribute will be connected to whatever user enters -->
+<!-- validation-adding required will cause a prompt to user if box not filled in -->
+<label for "lastName">Last Name: </label>
+<input id="lastName" type="text" placeholder="Last Name" name="lastName" required>
+</div>
+<div>
+<label for="Male">Male: </label>
+<input id="Male" type="radio" name="gender" id="male" value= "male" >
+
+<label for="Female">Female: </label>
+<input id="Female" type="radio" name="gender" id="female" value="female">
+
+<label for="Other">Other: </label>
+<input id="Other" type="radio" name="gender" id="other" value="other">
+</div>
+<!-- name attribute is the key and value attribute is the value that will be connected to name. -->
+
+<div>
+<label for="email">Email: </label>
+<input id ="email" type="email" placeholder="your email" name="email" required>
+<!-- email type validation - will check that there is an @ and also something after @ -->
+<label for="password">Password: </label>
+<input id ="password" type="password" placeholder="password" name="passWord" 
+	pattern=".{5,10} required title = "password must be 5 to 10 characters">
+</div>
+<!-- use pattern attribute Also need to put in an error message (title) -->
+<!-- title will be whatever error message you want.
+https://stackoverflow.com/questions/10281962/is-there-a-minlength-validation-attribute-in-html5 -->
+
+<label for="birthday">Birthday: </label>
+<select name = "month">
+	<option>Month</option>
+	<option>January</option>
+	<option>February</option>
+	<!-- here the name attribute is month and the value connected to it is whatever user selects. Could add a value attribute to each option if I wanted. 
+	I.e. for January: <option value = "1"> and 1 will be associated w/ name. -->
+	
+
+</select>
+
+<select name = "day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+
+</select>	
+<select name = "year">
+	<option>Year</option>
+	<option>2001</option>
+	<option>2002</option>
+</select>
+<div>
+<label for "agreement">I agree to the terms and conditions</label>
+<input type="checkbox" name="agreement" required>
+</div>
+
+<input type="submit">
+
+</form>
+
+</body>
+</html>

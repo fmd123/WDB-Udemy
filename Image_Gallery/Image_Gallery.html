@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery Exercise</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="Image_Gallery.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+ 
+
+</head>
+<body>
+	<nav class ="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target ="#theNavBar" aria-expanded = "false">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><i class="fa fa-camera-retro" aria-hidden="true"></i></span> Images</a>
+			</div>
+			<div class="collapse navbar-collapse" id="theNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="#"> About </a></li>
+					 <li><a href="#"> Contact </a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</nav>
+
+
+	<div class ="container-fluid">
+		<div class="jumbotron">
+			<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+			<p>A Web Dev Exercise Using Bootstrap</p>
+		</div>
+
+<!-- https://stackoverflow.com/questions/31107040/whats-the-difference-between-html-hidden-and-aria-hidden-attributes ARIA stands for accessible rich internet applications. Needed for screen readers -->
+	
+<!-- notice how to link to image src!!! https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/6195846?start=0 can't just copy/paste the link.-->
+
+<!-- In order to get images to size similarly despite different aspect ratios I set thumbnail to a fixed height and then set thumbnail img height to 100%. Widths varied but everything fit into the thumbnail div. A little bit of distortion as screen resized. how can I fix? This is how deal with it. See css page.
+https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586-->
+	
+		<div class="row flex">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/1UT9N-qiyG0">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/q8D4JalMsyU">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/xEh4hvxRKXM">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/GAoiMKffIZ4">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/QY0G3UzmAOk">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/6s2fFIsyyTc">
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/1aU_qw-IfHI">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/KRqt7IgXiCY">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/L0_O-M5dR60">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/Nu9wh8ivZm0">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/ji3xd3uKN6Y">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/Yr1SCCRJXIY">
+				</div>
+			</div>
+			
+		</div><!--end of row-->
+	</div>  <!--end of div.container-fluid-->
+
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+	padding-top: 70px;
+}
+
+.jumbotron{
+	background: #ffcc60; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffcc60, orange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffcc60, orange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffcc60, orange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffcc60, orange); /* Standard syntax */
+	color: #1ca2ce;
+	font-family: 'Pangolin', cursive;
+	
+}
+
+.navbar{
+
+    background-color: #3781c6;
+	
+}
+.navbar-inverse .navbar-nav>li>a{
+	color: #6acc24;
+}
+
+.navbar-inverse .navbar-brand{
+	color: #6acc24;
+}
+
+/*he shows how you can use inspector see which styling is overriding the other. 
+Just adding color: to .navbar didn't work.
+
+background-color: #3781c6; */
+
+/*aha!!! This is how deal with different aspect ratios:
+ https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586*/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+

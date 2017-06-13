@@ -1,0 +1,19 @@
+img{
+
+	width: 30%;
+	float:left;
+	margin: 1.64%;
+}
+
+p{
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 1.66%;
+	width: 30%;
+	border-bottom: 2px solid black;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+/*text transform is probably useful for information inputted by a user*/
