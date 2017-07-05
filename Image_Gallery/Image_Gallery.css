@@ -1,5 +1,6 @@
 body{
 	padding-top: 70px;
+	/*70px is width of navbar. Go to bootstrap docs if forget this*/
 }
 
 .jumbotron{
@@ -32,11 +33,39 @@ Just adding color: to .navbar didn't work.
 background-color: #3781c6; */
 
 /*aha!!! This is how deal with different aspect ratios:
- https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586*/
+ https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586
+
+ THIS IS VERY HELPFUL: 
+ https://www.educative.io/collection/page/5191711974227968/5741031244955648/5744505470844928*/
 
 .flex {
   display: flex;
+  /*this makes the element with a class of flex become a flex container
+   and all it's children are flex elements. Property value can also be inline-flex*/
+   /*flex-direction property default is row*/
   flex-wrap: wrap;
+  /*flex-wrap property default is nowrap. (choice of wrap, nowrap & wrap-reverse)*/
 }
+
+/*flex-flow is a shorthand to combine all flex properties. (Like border: 1 px solid red)*/
+/*E.g. 
+ul{
+	flex-flow: row wrap;
+  }
+  (flex-direction is row and flex-wrap will be wrap)
+*/
+
+/* Lecture 77:
+A lot of students have run into certain issues where whenever they create a Bootstrap grid 
+with images of varying dimensions, the thumbnail heights don't match 
+or there's a large gap on the second row, etc.
+
+Here's how you fix the gap on the second row - 
+https://www.udemy.com/the-web-developer-bootcamp/learn/v4/questions/1989586
+Here's one way to crop images of varying dimensions to all have matching width and height 
+- codepen.io/nax3t/pen/MJwpdb
+And from the docs: if you're looking for Pinterest-like presentation of thumbnails 
+of varying heights and/or widths, you'll need to 
+use a third-party plugin such as Masonry, Isotope, or Salvattore.*/
 
 

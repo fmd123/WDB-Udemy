@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exploring bootstrap</title>
+<!-- ...............LINKS NEEDED FOR USING BOOTSTRAP AND ALSO A LINK TO MY STYLESHEET... -->
+	<!-- get cdns for bootstrap link and js script from:http://getbootstrap.com/getting-started/ and get the jquery script from: https://code.jquery.com/-->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme (I haven't used this yet)-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="bootstrapExplore.css">
+</head>
+
+<div class = "container-fluid">
+<!-- IMPORTANT! put everything in the container when using bootstrap -->
+	<div class ="jumbotron">
+		<h2>This is a jumbotron</h2>
+		<button class = "btn btn-success btn-lg">Success button</button>
+		<p>Above is a large success button</p>
+	</div> <!--end of jumbotron-->
+
+<!-- FORM EXAMPLE.......................................................... -->
+	<h3>Form Examples:</h3>
+	<p>https://getbootstrap.com/css/#forms</p>
+	<h4> This is with .form-group</h4>
+	<form>
+	  <div class="form-group">
+	  <!-- use .form-group to group label and input. Adds space for optimal visual grouping-->
+	    <label for="exampleInputEmail1">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  </div>
+	  <!-- .form-control adds btstrp spacing, padding, rounded corners, nicer focus effect, etc. If you remove then goes to default css form. There are other important effects in how they interact with other elements. "Bootstrappfies it." More later -->
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+
+	  <div class="form-group">
+	    <label for="exampleInputFile">File input</label>
+	    <input type="file" id="exampleInputFile">
+	    <p class="help-block">Example block-level help text here.</p>
+	    <!-- .help-block adds explanatory text below an input field. Put inside .form-group div -->
+	  </div>
+
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Check me out
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<h4>.form-inline</h4>
+<p>check out the comments on screen widths and screen readers</p>
+
+<form class="form-inline">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+
+
+
+<!-- MISCELLANEOUS INFO ABOUT BOOTSTRAP AND CSS -->
+
+	<h3>Difference between .container and .container-fluid</h3>
+		<p>Quick version: .container has one fixed width for each screen size in bootstrap (xs,sm,md,lg); .container-fluid expands to fill the available width.</p>
+		<p>https://stackoverflow.com/questions/22262311/container-fluid-vs-container</p>
+
+
+	<h3>bootstrap and twitter bootstrap are the same thing</h3>
+		<p>https://stackoverflow.com/questions/17710862/what-is-difference-between-bootstrap-twitter-bootstrap-and-bootstrap-3
+		</p>
+	<h3>Margin vs. Padding</h3>
+		<p>https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css/9183818#9183818
+		</p>
+		<p>https://hackernoon.com/margin-or-padding-f5252562313</p>
+		<p>https://stackoverflow.com/questions/38128949/google-chrome-dev-tools-padding-vs-margin
+		</p>
+
+
+
+</div><!-- end container div -->
+<!-- OUTSIDE OF CONTAINER-FLUID DIV -->
+<div id ="outside">
+	<p>This text is outside the container-fluid div
+	</p>
+</div>
+
+<!-- ____________________BEGIN SCRIPTS__________________________________________ -->
+<!-- https://code.jquery.com/ -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+body{
+	background-color: #232323;
+	margin:0;
+	/*need to have a margin: 0 for both body and h1 to 
+	get rid of black edges around h1 */
+	font-family: "Montserrat", "Avenir";
+}
+
+#container{
+	margin: 20px auto;
+	/*0 margin top and bottom and auto margin right and left
+	This will center the grid*/
+	max-width: 600px;
+	/*this max-width will make the container not take up entire screen */
+}
+
+.square{
+	width:30%;
+	/* 6*30% of the #container div w/ margins will equal 100%*/
+	background: purple;
+	padding-bottom: 30%;
+	/*do this because the square divs are empty. otherwise see nothing*/
+	float: left;
+	/**/
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: background 0.6s;
+	/*this transiton property doesn't work in all browsers
+	so need to add in this: */
+	--webkit-transition: background 0.6s;
+	--moz-transition: background 0.6s;;
+}
+
+h1{
+	color: white;
+	line-height: 1.1;
+	text-align: center;
+	background-color: cornflowerblue;
+	margin: 0;
+	padding: 20px 0;
+	font-weight: normal;
+	text-transform: uppercase;
+
+}
+
+
+
+#stripe{
+	background-color: white;
+	height:30px;
+	text-align: center;
+
+}
+.selected{
+	color: darkred;
+	background: cornflowerblue;
+	border: none;
+
+
+}
+#colorDisplay{
+	font-size: 200%;
+}
+button{
+	border:none;
+	outline: none;/*this will get rid of blue outline around an active button*/
+	background-color: white;
+	text-transform: uppercase;
+	height: 100%;/*button height is 100% of containing element's height*/
+	font-weight: 700;
+	color: deeppink;
+	letter-spacing: 1px; /*spaces letters a little further apart*/
+	font-size: inherit; /*inherits font size from where?*/
+	/*padding-bottom: 2px;I added this when I was doing the test span
+	but it makes the hover effects and the click effect too large for button*/
+	transition: all .3s;
+	/*this makes all transitions take .75 seconds*/
+	--webkit-transition: background 0.6s;
+	--moz-transition: background 0.6s;;
+}
+
+button:hover {
+	color: deeppink;
+	background-color: skyblue;
+}
+
+#message{
+	display: inline-block;
+	width: 20%;
+	/*These two things leave the space open for the messages*/
+	font-weight:700;
+}
+/*https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861478?start=0
+*/

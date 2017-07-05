@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>172 jQuery Demo </title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	  crossorigin="anonymous">
+	 </script>
+
+</head>
+<body>
+	<h1>Hello jQuery</h1>
+	<ul>
+		<li>Newt</li>
+		<li>Platypus</li>
+		<li>Unicorn<a href = "unicorn.com">Unicorn.com</a></li>
+		<li id = "adorable">Wyvern</li>
+
+	<a href="google.com">Google</a>
+
+	<p>In console, try using $("selector") to see what happens. E.g. try $("li a") vs. $("a")</p>
+
+	<p>Try: $("h1").css("color", "red");</p>
+	<p>Compare to: document.querySelector("h1").style.color = "red";</p>
+
+	<p>can create a styles object:<br>
+	var styles = {
+	color: "red",
+	background: "pink",
+	border: "2px solid purple"
+	}
+	then: $("h1").css(styles);
+	
+
+	in the older method would have to add all this with multiple lines</p>
+	</ul>
+</body>
+</html>

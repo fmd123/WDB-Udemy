@@ -1,0 +1,56 @@
+body{
+	background: url(https://source.unsplash.com/xulIYVIbYIc);
+	/*see https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/6195846?start=0
+	for how to get img url. Have to copy the image idea but not the url that you see on page
+	add it to:
+	<img src="https://source.unsplash.com/cPF2nlWcMY4"> (or, in this case, above format)*/
+	background-size:cover;
+	/*Makes image as small as possible while still covering entire height & width of screen
+	 without changing aspect ratio*/
+	background-position: center;
+
+	font-family: Lato, sans-serif;
+	color: white;
+	/*targeting text color in body will not change color of navbar fonts
+	bootstrap code  has more specificity and will override the body targeting
+	Don't forget to use inspector on elements!*/
+}
+
+html{
+	height: 100%;
+	/*THIS FIXES THE PROBLEM OF REPEATING IMAGE
+	html will now take up 100% of it's container which is document window
+	check this out with inspector and you will see!*/
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.2),
+				 0px 18px 23px rgba(0,0,0,0.1);
+	/*note that you do not do three text-shadows 
+	but give ONE text shadow three different values*/
+	/*use three shadows to create this particular shadow*/
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow*/
+}
+
+h1{
+	font-weight: 700;
+	font-size: 5em;
+}
+
+hr{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2) ;
+	/*rgba is a transparent color thing
+	here he uses border to style the hr to give it some "shadows"*/
+}
+
+
+/*h1, h3{
+	color: white;
+}
+one way to target more than one element type but will use body instead.
+*/

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exploring bootstrap's default navbar</title>
+	<!-- ...............LINKS NEEDED FOR USING BOOTSTRAP AND ALSO A LINK TO MY STYLESHEET... -->
+	<!-- get cdns for bootstrap link and js script from:http://getbootstrap.com/getting-started/ and get the jquery script from: https://code.jquery.com/-->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme (I haven't used this yet)-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+
+	<!-- this is the default navbar from: https://getbootstrap.com/components/#navbar on 6/17/17  Dropdowns will only work with javascript  and jquery scripts-->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <form class="navbar-form navbar-left">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!--SIMPLIFIED NAVBAR FROM WDB UDEMY COURSE....................-->
+
+	<nav class = "navbar navbar-default">
+		<div class ="container-fluid">
+			<div class= "navbar-header">
+			<!-- HAMBURGER MENU CODE GOES IN NAVBAR HEADER-->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<!-- data-target matches id of collapse div. Notice that use # in front of id because it is a target -->
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+				<a href="#" class = "navbar-brand">
+				click on brand name/logo
+				</a>
+				<!-- navbar-header is architectural element for allowing brand to be 100% on small screen. rest of navbar elements drop below when screen made small. See below -->
+			
+			</div> <!--end of navbar-header-->
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<!-- WRAP CODE YOU WANT TO HIDE IN COLLAPSE DIV -->
+				<ul class = "nav navbar-nav">
+				<!--.nav .navbar-nav ul collects elements on left side of navbar-->
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class ="nav navbar-nav navbar-right">
+				<!-- this will group elements on right side of navbar -->
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+					
+				</ul>
+			</div> <!-- end of navbar collapse -->
+
+		</div> <!--container-fluid-->
+			
+	</nav>
+	<h1>Notes on navbars</h1>
+	
+	<p>First navbar is default navbar from bootstrap</p>
+	<p>Second navbar is one created in WDB Udemy course</p>
+	<p>navbar-header explained: https://stackoverflow.com/questions/34689014/what-does-navbar-header-class-do-in-bootstrap</p>
+	
+
+
+<!-- ____________________BEGIN SCRIPTS__________________________________________ -->
+<!-- https://code.jquery.com/ -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

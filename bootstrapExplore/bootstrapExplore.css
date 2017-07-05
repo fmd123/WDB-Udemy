@@ -1,0 +1,12 @@
+.jumbotron{
+	/*padding-top: 70px;*/
+	text-align: center;
+}
+
+#outside{
+	color: red;
+}
+
+body{
+	background-color: pink;
+}
