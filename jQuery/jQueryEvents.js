@@ -55,10 +55,41 @@ Also keydown and keypress fire on both the a key and the shift key
 stackoverflow post: whats-the-theory-behind-jquery-keypress-keydown-keyup-black-magic-on-macs
 */
 
+/*$("input").keypress(function(){
+	console.log("you pressed a key");
+});*/
 
+$("input").keypress(function(event){
+	console.log(event);
+});
+/*
+This logs the description of the event object
+important things in event object are: charcode, keycode and which
 
+'Which' refers to the code of the key that was pressed. 
+https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+The keycode for enter key is 13.
+*/
 
-
-
+$("input").keypress(function(event){
+	if(event.which === 48){
+		alert ("you pressed 0 key");
+	}
+});
+/*
+event is placeholder for the event object that is passed in and captured in variable = event. Sometimes people use e
 
 */
+
+$("input").keypress(function(event){
+	if(event.which === 48){
+		alert ("you pressed 0 key");
+	}
+});
+
+/*Will use keypress to make to do list*/
+//typo in next lexture should be: $('input[type="text"]')
+/*on() very similar to vanilla JS addEventListener()
+on allows us to specify if we are doing a click or a dblclick or a dragstart or keypress
+takes the place of all sorts of methods in vanilla JS*/
+
